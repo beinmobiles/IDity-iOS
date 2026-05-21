@@ -19,7 +19,7 @@ Please contact **[idity@beinmobiles.com](mailto:idity@beinmobiles.com)** to get 
 ### Swift Package Manager (SPM)
 1. In Xcode, go to **File > Add Packages...**
 2. Enter the following repository URL:
-   `https://github.com/mhammoud85/IDity-iOS.git`
+   `https://github.com/beinmobiles/IDity-iOS.git`
 3. Set the dependency rule to the latest version or branch.
 
 **Minimum Deployment Target:** iOS 15.6
@@ -79,16 +79,11 @@ Using specific IDityLanguage cases improves OCR accuracy and performance by narr
 **Optimize for Detection:** The order of the languages in the array is significant. The engine processes the list sequentially, so you should place the most likely language for your target users at the beginning of the array.
 
 ### 2. Start the Journey
-Generate a unique reference number for the session and trigger the SDK UI.
 
 ```swift
-// Generate a unique reference number
-let referenceNo = "\(UIDevice.current.identifierForVendor?.uuidString ?? "")-\(Date().timeIntervalSince1970)"
-
 // Start the verification process
 IDitySDK.startJourney(
     from: self, 
-    referenceNumber: referenceNo, 
     delegate: self
 )
 ```
@@ -103,8 +98,8 @@ Conform to the IDityJourneyCallbacks protocol to handle the lifecycle and result
 extension YourViewController: IDityJourneyCallbacks {
 
     /// Called when the SDK successfully initializes and the UI appears
-    func onJourneyStarted(journey: Int) {
-        print("Identity journey \(journey) has started.")
+    func onJourneyStarted() {
+        print("IDity journey has started.")
     }
 
     /// Called when the document scanning and verification is successful
