@@ -2829,6 +2829,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "IDity",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "AVFoundation",
         "printedName": "AVFoundation",
         "declKind": "Import",
@@ -3244,51 +3254,72 @@
       "value": "\"com.mmh.idity\""
     },
     {
+      "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityPaddedLabel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 179,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityPaddedLabel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 188,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityPaddedLabel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 200,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityPaddedLabel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 210,
+      "length": 2,
+      "value": "12"
+    },
+    {
       "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
       "kind": "StringLiteral",
-      "offset": 145,
+      "offset": 167,
       "length": 9,
       "value": "\"#0F766E\""
     },
     {
       "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
       "kind": "StringLiteral",
-      "offset": 196,
-      "length": 9,
-      "value": "\"#0B4F4A\""
-    },
-    {
-      "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
-      "kind": "StringLiteral",
-      "offset": 244,
+      "offset": 345,
       "length": 9,
       "value": "\"#2563EB\""
     },
     {
       "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
       "kind": "StringLiteral",
-      "offset": 293,
+      "offset": 394,
       "length": 9,
       "value": "\"#16A34A\""
     },
     {
       "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 443,
       "length": 9,
       "value": "\"#D97706\""
     },
     {
       "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
       "kind": "StringLiteral",
-      "offset": 391,
+      "offset": 492,
       "length": 9,
       "value": "\"#DC2626\""
     },
     {
       "filePath": "\/Users\/klevr\/Documents\/IDitySDK-iOS\/IDity\/Support\/IDityTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 6180,
+      "offset": 6486,
       "length": 1,
       "value": "8"
     },
