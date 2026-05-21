@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/beinmobiles/IDity-iOS.git",
       "state" : {
-        "revision" : "2bd652aab395a6c79d58f8a9c482145723a2bbea",
-        "version" : "1.0.5"
+        "revision" : "019075e325efd3ca71918c92407014857b30499b",
+        "version" : "1.0.7"
       }
     }
   ],
