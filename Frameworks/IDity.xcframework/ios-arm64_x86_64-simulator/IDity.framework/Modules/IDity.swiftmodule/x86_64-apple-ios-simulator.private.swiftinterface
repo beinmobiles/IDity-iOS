@@ -6,25 +6,12 @@ import AVFoundation
 import CoreImage
 import Foundation
 import ImageIO
-import PhotosUI
 import Swift
 import UIKit
 import Vision
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol IDityJourneyCallbacks : AnyObject {
-  func onJourneyStarted()
-  func onJourneyCompleted(infoObject: IDity.InfoObject)
-  func onJourneyCancelled()
-  func onError(error: any Swift.Error)
-}
-@objc @_inheritsConvenienceInitializers public class IDitySDK : ObjectiveC.NSObject {
-  public static func initialize(clientKey: Swift.String, recognitionLanguages: [IDity.IDityLanguage] = [.en], tintColor: UIKit.UIColor = .tintColor)
-  public static func startJourney(from presenter: UIKit.UIViewController, delegate: any IDity.IDityJourneyCallbacks)
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers public class InfoObject : ObjectiveC.NSObject {
   public var firstName: Swift.String
   public var lastName: Swift.String
@@ -72,6 +59,18 @@ public enum IDityLanguage : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+public protocol IDityJourneyCallbacks : AnyObject {
+  func onJourneyStarted()
+  func onJourneyCompleted(infoObject: IDity.InfoObject)
+  func onJourneyCancelled()
+  func onError(error: any Swift.Error)
+}
+@objc @_inheritsConvenienceInitializers public class IDitySDK : ObjectiveC.NSObject {
+  public static func initialize(clientKey: Swift.String, recognitionLanguages: [IDity.IDityLanguage] = [.en], tintColor: UIKit.UIColor = .tintColor)
+  public static func startJourney(from presenter: UIKit.UIViewController, delegate: any IDity.IDityJourneyCallbacks)
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension IDity.IDityLanguage : Swift.Equatable {}
 extension IDity.IDityLanguage : Swift.Hashable {}
